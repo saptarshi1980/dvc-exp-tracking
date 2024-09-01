@@ -1,0 +1,40 @@
+ 2 conda create -p venv python==3.10
+   3 conda activate venv
+   4 python .\src\model_building.py
+   5 pip install dvclive
+   6 git init
+   7 dvc init
+   8 dvc add .\data\student_performance.csv
+   9 git status
+  10 git add .
+  11 git commit -m "Initial commit"
+  12 python .\src\model_building.py
+  13 git add .
+  14 git commit -m "Initial commit-2"
+  15 python .\src\model_building.py
+  16 git status
+  17 dvc exp show
+  18 python .\src\model_building.py
+  19 dvc exp show
+  20 git add .
+  21 git commit -m "2nd commit after changing hyper params"
+  22 dvc exp diff beaky-razz party-ossa
+  23 python .\src\model_building.py
+  24 dvc exp show
+  25 python .\src\model_building.py
+  26 dvc exp show
+  27 dvc exp apply bumpy-ankh
+  28 dvc exp show
+  29 dvc exp apply wedgy-tils
+  30 dvc exp show
+  31 dvc status
+  32 git status
+  33 git commit -m "Final Commit"
+  34 git commit -m "Final Commit"
+  35 git status
+  36 git add .
+  37 git commit -m "Final Commit"
+  38 git commit -m "Final Commit"
+  39 git branch -M main
+  40 git remote add origin https://github.com/saptarshi1980/dvc-exp-tracking.git
+  41 git push origin main

@@ -1,0 +1,21 @@
+step1- init git repo
+step2- init dvc repo
+step3- add code to your training files
+step4- run DVC live with context manager and log_param() and log_metric()
+step5- run training.py file
+step6- params and metric get logged in 'dvclive' folder for current experiment, params.yaml and dvc.yaml also created
+step7- change the parameter value and run the training file again
+step8- second experiment will also get logged 
+
+
+History of experiment is maintained in temp folder in .dvc folder
+
+step 9- create a new branch for the best  experiment using 'dvc exp branch' command
+step10- checkout to this new branch for further development
+
+
+
+The whole philosophy of experiment tracking in DVC is to declutter our git commands and only to save those experiment which are best among all and leave others in the dvc cache folder.
+
+step11- use 'dvc exp apply' to switch between experiment
+step 12- use command 'dvc exp diff'  to compare parameter and metrics among two experiments and see the change of values between two 
