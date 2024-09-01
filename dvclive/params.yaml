@@ -1,0 +1,2 @@
+n_estimators: 80
+max_depth: 7

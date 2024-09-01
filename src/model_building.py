@@ -16,8 +16,8 @@ y = data['placed_or_not']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # Define hyperparameters for the RandomForestClassifier
-max_depth = 10
-n_estimators = 100
+max_depth = 7
+n_estimators = 80
 random_state = 42
 
 # Initialize and train the RandomForestClassifier
