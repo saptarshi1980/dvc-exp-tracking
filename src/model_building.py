@@ -37,8 +37,8 @@ with Live(save_dvc_exp=True) as live:
     live.log_metric('precision',precision)
     live.log_metric('recall',recall)
     live.log_metric('f1',f1)
-    live.log_params('n_estimators',n_estimators)
-    live.log_params('max_depth',max_depth)
+    live.log_param('n_estimators',n_estimators)
+    live.log_param('max_depth',max_depth)
 
 # Print the evaluation metrics
 print(f"Accuracy: {accuracy:.2f}")
